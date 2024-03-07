@@ -1,9 +1,12 @@
 import React from "react";
 
-const Shopping = () => {
+const Shopping = (props) => {
+   const [name] = props.data
  return(
  <div>
-    <h1>Hello</h1>
+    {props.data.map(data => {
+      <h1>{name}</h1>
+    })}
  </div>
  )
 }
